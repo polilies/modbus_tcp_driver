@@ -114,7 +114,7 @@ void main()
                if(modbus_rx.data[0] || modbus_rx.data[2] ||
                   modbus_rx.data[1] >= 8 || modbus_rx.data[3]+modbus_rx.data[1] > 8)
                   modbus_exception_rsp(MODBUS_ADDRESS,modbus_rx.func,ILLEGAL_DATA_ADDRESS);
-               else
+               else	
                {
                   int8 data;
                   
